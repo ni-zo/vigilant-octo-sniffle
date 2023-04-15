@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: gray; 
+    color:beige;
+}
+
+/*#elements{
+    color: black ;
+}*/
+
+nav img{
+    width: 10rem;
+    height: 10rem;
+}
+
+/*#elements .carte{
+    background-color: red !important;
+}*/
+
+/* #elements .carte {
+    background-color: pink ;
+  }
+
+#elements #carte div{
+    background-color: orangered;
+    color: brown ;
+}*/
+
+.carte{
+    margin: 4rem;
+    padding: 4rem;
+    border: 1rem solid black;
+    background-color: rebeccapurple;
+} 
