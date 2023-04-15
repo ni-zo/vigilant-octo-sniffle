@@ -1,0 +1,21 @@
+# curl -i -H 'Content-Type: application/json' -X POST localhost:8080/pos -d '{
+#        "name": "Product Name",
+#        "category": {
+#            "id": 1
+#        },
+#        "price": 10.99,
+#        "description": "Product description"
+#    }'
+POST localhost:8080/pos
+Content-Type: application/json
+
+{
+  "name": "Product-Name",
+  "category": {
+    "id": 1
+  },
+  "price": 10.99,
+  "description": "Product description"
+}
+
+###
