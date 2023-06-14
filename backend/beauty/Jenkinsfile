@@ -19,7 +19,7 @@ pipeline {
                     checkout scm
                     
                     }
-                sh "cd backend/beauty/"
+                #sh "cd backend/beauty/"
                 sh "docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} -f backend/beauty/Dockerfile -f backend/beauty/ ."
             }
             
