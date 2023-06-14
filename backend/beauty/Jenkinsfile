@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Build And Push Docker Image') {
             steps {
-                sh "docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} -file backend/beauty/Dockerfile"
+                sh "docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} -file backend/beauty/Dockerfile ."
             }
             
             post {
