@@ -17,10 +17,9 @@ pipeline {
             steps {
                 script {
                     checkout scm
-                    sh '''
-                        cd backend/beauty/ &&
-                        docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} .
-                    '''
+                    dir('backend/beauty') {
+                        sh "docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} ."
+                    }
                     }
                 
             }
